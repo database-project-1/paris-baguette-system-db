@@ -134,7 +134,7 @@ CREATE TABLE IF NOT EXISTS 회원 (
     이메일           VARCHAR(100),
     주소             VARCHAR(100),
     가입일자         TEXT,
-    정보제공동의여부 INTEGER,   
+    정보제공동의여부 INTEGER,
     FOREIGN KEY (고객ID) REFERENCES 고객(고객ID) ON DELETE CASCADE
 );
 CREATE TABLE IF NOT EXISTS 비회원 (
