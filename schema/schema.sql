@@ -120,6 +120,7 @@ CREATE TABLE IF NOT EXISTS 직원 (
     급여   INT          CHECK (급여 > 0),
     입사일 TEXT,
     지점명 VARCHAR(50),
+    직급   VARCHAR(10)  CHECK (직급 IN ('지점장', '직원')),
     FOREIGN KEY (지점명) REFERENCES 지점(지점명) ON UPDATE CASCADE
 );
 CREATE TABLE IF NOT EXISTS 고객 (
