@@ -225,3 +225,18 @@ CREATE TABLE IF NOT EXISTS 공급 (
     FOREIGN KEY (상품코드) REFERENCES 상품(상품코드),
     FOREIGN KEY (업체코드) REFERENCES 공급업체(업체코드)
 );
+
+CREATE INDEX IF NOT EXISTS idx_판매_지점명_판매일자
+ON 판매(지점명, 판매일자);
+
+CREATE INDEX IF NOT EXISTS idx_판매상세_상품코드
+ON 판매상세(상품코드);
+
+CREATE INDEX IF NOT EXISTS idx_보유_재고조회
+ON 보유(지점명, 상품코드, 재고수량, 최소재고기준);
+
+CREATE INDEX IF NOT EXISTS idx_발주_상태_업체코드
+ON 발주(상태, 업체코드);
+
+CREATE INDEX IF NOT EXISTS idx_공급내역_업체코드_공급일시
+ON 공급내역(업체코드, 공급일시);
