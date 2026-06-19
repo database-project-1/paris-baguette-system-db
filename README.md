@@ -9,8 +9,8 @@
 ```
 2026_1_database_project/
 ├── data/
-│   └── data.ipynb                   # 더미 데이터 생성 (Faker 기반)
-├── docs/                            # ER diagram, user interface 설계 문서
+│   └── data.ipynb                   # 더미 데이터 생성 
+├── docs/                            # ER diagram, diagram 설명
 ├── interfaces/
 │   ├── consumer_cli.ipynb           # ① 소비자 CLI
 │   ├── staff_Pos.ipynb              # ② 매장 직원 POS
