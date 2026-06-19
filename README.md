@@ -10,7 +10,7 @@
 2026_1_database_project/
 ├── data/
 │   └── data.ipynb                   # 더미 데이터 생성 (Faker 기반)
-├── docs/                            # 명세서, ER diagram, 설계 문서
+├── docs/                            # ER diagram, user interface 설계 문서
 ├── interfaces/
 │   ├── consumer_cli.ipynb           # ① 소비자 CLI
 │   ├── staff_Pos.ipynb              # ② 매장 직원 POS
@@ -36,7 +36,7 @@
 
 `파리바게트.db`는 용량 문제로 GitHub에 올리지 않았습니다. 아래 Google Drive 링크에서 다운로드한 뒤 `schema/` 폴더에 넣어주세요.
 
-> 📁 **Google Drive 링크:** `(여기에 링크 삽입)`
+> 📁 **Google Drive 링크:** `[🔗](https://drive.google.com/drive/folders/1Fy7RQH6XqRe04M522_9jzh_Ounxf_wdx?dmr=1&ec=wgc-drive-%5Bmodule%5D-goto)`
 
 DB 파일이 없거나 처음부터 새로 만들고 싶다면 1번 순서대로 직접 생성할 수도 있습니다.
 
